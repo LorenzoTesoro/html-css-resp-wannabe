@@ -127,25 +127,31 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
-@media screen and (max-width:768px) and (min-width: 481px) {
+@media screen and (max-width:768px) {
     .container{
-        width:100%;
+        width:80%;
     }
 }
 
  @media screen and (max-width:480px){
-
+    .why-us{
+        background-color: #232946;
+    }
     .row{
-        display: block;
+        flex-wrap: wrap;
     }
     .row .col{
         width: 100%;
     }
-    section img{
-        height:100%;
+    .card, .why-us img{
+        padding-bottom: 3rem;
     }
+
+ }
+
+ @media screen and (min-width:769px)
+ {
     .container{
-        width:100%;
+        width:80%;
     }
-    
  }
